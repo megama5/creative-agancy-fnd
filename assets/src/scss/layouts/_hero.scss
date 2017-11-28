@@ -1,0 +1,51 @@
+.hero{
+	&__nav{
+		&-btn{
+			@extend .hamburger;
+		}
+	}
+	&__info{
+		text-align: center;
+		@include flex-grid-column(4);
+		@include breakpoint(medium down){
+			@include flex-grid-column(12);
+		}
+		&-title{
+			@include font($primary-font-family, 700, rem-calc(36)){
+				text-transform: uppercase;
+			}
+			margin-bottom: rem-calc(28);
+		}
+		&-nav{
+			@include font($primary-font-family, 700, rem-calc(14)){
+				text-transform: uppercase;
+			}
+			@include breadcrumbs(){
+				//separator styling
+				@include font($primary-font-family, 700, rem-calc(14));
+			}
+			&-items{
+
+			}
+			&-link{
+				@include font($primary-font-family,700, rem(14));
+				color: $main-color;
+				@include hover(){
+					color: #fff;
+					text-decoration: none;
+				}
+				&--current{
+					color: $main-color;
+					cursor: default;
+					@include hover(){
+						color: $main-color;
+						cursor: default;
+					}
+				}
+				text-transform: uppercase;
+				transition: all .3s ease;
+			}
+		}
+	}
+	
+}

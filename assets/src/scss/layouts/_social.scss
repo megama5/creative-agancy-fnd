@@ -1,0 +1,31 @@
+.social{
+	padding-bottom: rem-calc(50);
+	&__row{
+		@include flex-grid-row();
+	}
+	&__list{
+		@include flex-grid-column(12, rem-calc(15));
+		text-align: right;
+		&-item{
+			display: inline-block;
+			font-size: rem-calc(18);	
+			& + &{
+				margin-left: rem-calc(13);
+			}
+	
+			@include hover(){
+				& i{
+					color: $main-green;	
+				}
+			}
+		  &-i{
+				@include transition();
+				color: $gray-01;
+			}
+		}
+		&--left{
+			text-align: left;
+			padding-left: 0;
+		}
+	}
+}

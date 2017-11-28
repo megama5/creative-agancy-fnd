@@ -1,0 +1,117 @@
+// Ionicons Variables
+// --------------------------
+
+$ionicons-font-path: "fonts" !default;
+$ionicons-font-family: "Ionicons" !default;
+$ionicons-version: "2.0.0" !default;
+$ionicons-prefix: ion- !default;
+
+
+$ionicon-var-social-facebook: "\f231";
+$ionicon-var-social-facebook-outline: "\f230";
+$ionicon-var-social-instagram: "\f351";
+$ionicon-var-social-instagram-outline: "\f350";
+$ionicon-var-social-linkedin: "\f239";
+$ionicon-var-social-linkedin-outline: "\f238";
+$ionicon-var-social-pinterest: "\f2b1";
+$ionicon-var-social-pinterest-outline: "\f2b0";
+$ionicon-var-social-twitter: "\f243";
+$ionicon-var-social-twitter-outline: "\f242";
+$ionicon-var-social-youtube: "\f24d";
+$ionicon-var-social-youtube-outline: "\f24c";
+$ionicon-var-android-checkbox: "\f374";
+$ionicon-var-android-checkbox-blank: "\f371";
+$ionicon-var-android-checkbox-outline: "\f373";
+$ionicon-var-android-checkbox-outline-blank: "\f372";
+$ionicon-var-ios-infinite: "\f44a";
+$ionicon-var-ios-infinite-outline: "\f449";
+$ionicon-var-ios-settings: "\f4a7";
+$ionicon-var-ios-settings-strong: "\f4a6";
+$ionicon-var-ios-lightbulb: "\f452";
+$ionicon-var-ios-lightbulb-outline: "\f451";
+$ionicon-var-ios-pulse: "\f493";
+$ionicon-var-ios-pulse-strong: "\f492";
+
+// Ionicons Font Path
+// --------------------------
+
+@font-face {
+ font-family: $ionicons-font-family;
+ src:url("#{$ionicons-font-path}/ionicons.eot?v=#{$ionicons-version}");
+ src:url("#{$ionicons-font-path}/ionicons.eot?v=#{$ionicons-version}#iefix") format("embedded-opentype"),
+  url("#{$ionicons-font-path}/ionicons.ttf?v=#{$ionicons-version}") format("truetype"),
+  url("#{$ionicons-font-path}/ionicons.woff?v=#{$ionicons-version}") format("woff"),
+  url("#{$ionicons-font-path}/ionicons.svg?v=#{$ionicons-version}#Ionicons") format("svg");
+ font-weight: normal;
+ font-style: normal;
+}
+
+.ion {
+  display: inline-block;
+  font-family: $ionicons-font-family;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: inherit;
+}
+
+// Ionicons Icons
+// --------------------------
+.ionicons,
+.#{$ionicons-prefix}ios-pulse:before,
+.#{$ionicons-prefix}ios-pulse-strong:before,
+.#{$ionicons-prefix}ios-lightbulb:before,
+.#{$ionicons-prefix}ios-lightbulb-outline:before,
+.#{$ionicons-prefix}ios-settings:before,
+.#{$ionicons-prefix}ios-settings-strong:before,
+.#{$ionicons-prefix}ios-infinite:before,
+.#{$ionicons-prefix}ios-infinite-outline:before,
+.#{$ionicons-prefix}android-checkbox:before,
+.#{$ionicons-prefix}android-checkbox-blank:before,
+.#{$ionicons-prefix}android-checkbox-outline:before,
+.#{$ionicons-prefix}android-checkbox-outline-blank:before,
+.#{$ionicons-prefix}social-facebook:before,
+.#{$ionicons-prefix}social-facebook-outline:before,
+.#{$ionicons-prefix}social-instagram:before,
+.#{$ionicons-prefix}social-instagram-outline:before,
+.#{$ionicons-prefix}social-linkedin:before,
+.#{$ionicons-prefix}social-linkedin-outline:before,
+.#{$ionicons-prefix}social-pinterest:before,
+.#{$ionicons-prefix}social-pinterest-outline:before,
+.#{$ionicons-prefix}social-twitter:before,
+.#{$ionicons-prefix}social-twitter-outline:before,
+.#{$ionicons-prefix}social-youtube:before,
+.#{$ionicons-prefix}social-youtube-outline:before
+{
+  @extend .ion;
+}
+.#{$ionicons-prefix}ios-pulse:before { content: $ionicon-var-ios-pulse; }
+.#{$ionicons-prefix}ios-pulse-strong:before { content: $ionicon-var-ios-pulse-strong; }
+.#{$ionicons-prefix}ios-lightbulb:before { content: $ionicon-var-ios-lightbulb; }
+.#{$ionicons-prefix}ios-lightbulb-outline:before { content: $ionicon-var-ios-lightbulb-outline; }
+.#{$ionicons-prefix}ios-settings:before { content: $ionicon-var-ios-settings; }
+.#{$ionicons-prefix}ios-settings-strong:before { content: $ionicon-var-ios-settings-strong; }
+.#{$ionicons-prefix}ios-infinite:before { content: $ionicon-var-ios-infinite; }
+.#{$ionicons-prefix}ios-infinite-outline:before { content: $ionicon-var-ios-infinite-outline; }
+.#{$ionicons-prefix}social-facebook:before { content: $ionicon-var-social-facebook; }
+.#{$ionicons-prefix}social-facebook-outline:before { content: $ionicon-var-social-facebook-outline; }
+.#{$ionicons-prefix}social-instagram:before { content: $ionicon-var-social-instagram; }
+.#{$ionicons-prefix}social-instagram-outline:before { content: $ionicon-var-social-instagram-outline; }
+.#{$ionicons-prefix}social-linkedin:before { content: $ionicon-var-social-linkedin; }
+.#{$ionicons-prefix}social-linkedin-outline:before { content: $ionicon-var-social-linkedin-outline; }
+.#{$ionicons-prefix}social-pinterest:before { content: $ionicon-var-social-pinterest; }
+.#{$ionicons-prefix}social-pinterest-outline:before { content: $ionicon-var-social-pinterest-outline; }
+.#{$ionicons-prefix}social-twitter:before { content: $ionicon-var-social-twitter; }
+.#{$ionicons-prefix}social-twitter-outline:before { content: $ionicon-var-social-twitter-outline; }
+.#{$ionicons-prefix}social-youtube:before { content: $ionicon-var-social-youtube; }
+.#{$ionicons-prefix}social-youtube-outline:before { content: $ionicon-var-social-youtube-outline; }
+.#{$ionicons-prefix}android-checkbox:before { content: $ionicon-var-android-checkbox; }
+.#{$ionicons-prefix}android-checkbox-blank:before { content: $ionicon-var-android-checkbox-blank; }
+.#{$ionicons-prefix}android-checkbox-outline:before { content: $ionicon-var-android-checkbox-outline; }
+.#{$ionicons-prefix}android-checkbox-outline-blank:before { content: $ionicon-var-android-checkbox-outline-blank; }

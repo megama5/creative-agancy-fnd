@@ -1,0 +1,26 @@
+.contacts{
+	padding: rem-calc(50) 0;
+	background-color: $main-green;
+	margin-bottom: rem-calc(50);
+	&__row{
+		@include flex-grid-row();	
+	}
+	&__part{
+		@include flex-grid-column(12, rem-calc(15));
+		@include breakpoint(medium up){
+			@include flex-grid-column(6, rem-calc(15));
+		}
+		margin-bottom: rem-calc(20);
+	}
+	&__title{
+		@include font($primary-font-family, 700, rem-calc(30), $white){
+			line-height: rem-calc(48);
+		}
+		margin-bottom: rem-calc(30);
+	}
+	&__btn{
+		@include create-btn-style();
+		background-color: $white;
+		color: $main-green;
+	}
+}

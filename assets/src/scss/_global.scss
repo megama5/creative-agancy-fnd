@@ -1,0 +1,12 @@
+a{
+	text-decoration: none;
+}
+
+.logo{
+	@include font($primary-font-family, 700, rem-calc(18)){
+		text-transform: uppercase;
+	}
+	@include hover(){
+		color: $white;
+	}
+}

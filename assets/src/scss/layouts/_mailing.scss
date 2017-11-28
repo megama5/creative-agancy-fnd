@@ -1,0 +1,49 @@
+.mailing{
+	&__wrap{
+		background-color: $white;
+		padding: rem-calc(20) rem-calc(26) rem-calc(20);
+	}
+	&__title{
+		@include font($primary-font-family, 700, rem-calc(24)){
+			text-transform: uppercase;
+			line-height: rem-calc(36);
+		}
+		max-width: 80%;
+	}
+	&__text{
+		@include font($body-font-family, 400, rem-calc(16), $gray-01);
+		margin-bottom: rem-calc(30);
+	}
+	&__battons{
+		display: flex;
+		position: relative;
+		&-label{
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-size: 0;
+		}
+		&-input{
+			width: 80%;
+			padding-left: rem-calc(20);
+			padding-right: rem-calc(20);
+			border: rem-calc(1) solid rgba(0, 0, 0, 0.1);
+			@include font($primary-font-family, 700, rem-calc(12));
+			&::placeholder{
+				@include font($primary-font-family, 700, rem-calc(12), $gray-02);
+			}
+			&:focus{
+				outline: none;
+			}
+		}
+		&-submit{
+			@include create-btn-style(){
+				min-width: rem-calc(135);
+				min-height: rem-calc(50);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+}

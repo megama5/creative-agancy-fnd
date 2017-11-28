@@ -1,0 +1,31 @@
+.plan-item{
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__icon{
+  	margin-bottom: rem-calc(30);
+  	@include greenLine(){
+  		bottom: rem-calc(20);
+  		left: rem-calc(-8);
+  		width: rem-calc(50);
+  		height: rem-calc(20);
+  	}
+  	&-src{
+  		font-size: rem-calc(60);
+
+  	}
+  }
+  &__title{
+  	@include font($primary-font-family, 700, rem-calc(18)){
+  		text-transform: uppercase;
+  	}
+  	margin-bottom: rem-calc(20);
+  }
+  &__text{
+  	@include create-text-style(){
+  		line-height: rem-calc(30);
+  		text-align: center;
+  	}
+  }
+}

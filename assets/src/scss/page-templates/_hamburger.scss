@@ -1,0 +1,37 @@
+.hamburger{
+	width: rem-calc(30);
+	height: rem-calc(26);
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	cursor: pointer;
+	flex-wrap: wrap;
+	&:focus{
+		outline: none;
+	}	
+	& span{
+		display: inline-block;
+		width: 100%;
+		border: rem-calc(1) solid $dark-gray;
+		@include transition();
+		
+		& + span{
+			margin-top: rem-calc(10);
+		}
+		&:nth-child(1){
+			max-width: rem-calc(31);
+		}
+		&:nth-child(2){
+			max-width: rem-calc(15);
+		}
+		&:nth-child(3){
+			max-width: rem-calc(21);
+		}
+	}
+	@include hover(){
+		& span{
+			border-color: $white;	
+		}
+	}
+}

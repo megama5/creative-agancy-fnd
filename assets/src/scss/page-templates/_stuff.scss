@@ -1,0 +1,39 @@
+.stuff{
+  padding: rem-calc(23) rem-calc(30) rem-calc(40);
+  border-top: rem-calc(5) solid $main-green;
+  position: relative;
+  &::before{
+  	position: absolute;
+  	content: "";
+  	@include size(0);
+  	top: rem-calc(-5);
+  	right: 0;
+    border-top: rem-calc(15) solid #7beec7;
+    border-left: rem-calc(15) solid transparent;
+  }
+  @include hover(){
+  	box-shadow: 0 0 rem-calc(50) rgba(0, 0, 0, 0.25);
+	}
+  &__title{
+  	@include font($primary-font-family, 700, rem-calc(30)){
+  		line-height: rem-calc(48);
+  		text-transform: uppercase;
+  	}
+  }
+	&__btn{
+		@include create-btn-style()
+		min-width: rem-calc(135);
+		margin-bottom: rem-calc(50);
+		&--top{
+			padding-top: rem-calc(5);
+			padding-bottom: rem-calc(5);
+			height: auto;
+		}
+	}
+	&__list{
+		margin-bottom: rem-calc(50);
+		&-item{
+			@extend .work__list-item;
+		}
+	}
+}

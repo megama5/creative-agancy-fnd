@@ -1,0 +1,40 @@
+.footer{
+	&__row{
+		@include flex-grid-row();
+		align-items: center;
+	}
+	&__nav{
+		@include flex-grid-column(12, rem-calc(15) );
+		@include breakpoint(large up){
+			@include flex-grid-column(7, rem-calc(15) );	
+		}
+		&-list{
+			@include breadcrumbs("-"){
+				color: $gray-03;
+			}
+		}
+		&-link{
+			@include font($body-font-family, 400, rem-calc(14), $gray-03){
+				text-transform: uppercase;
+			}
+			@include hover(){
+				color: $main-green;
+				text-decoration: none;
+			}
+			@include transition();
+		}
+	}
+	&__about{
+		@include breakpoint(large up){
+			@include flex-grid-column(5, rem-calc(15));
+			@include font($body-font-family, 400, rem-calc(14), $gray-03){
+				text-align: right;	
+			}	
+		}
+		@include flex-grid-column(12,rem-calc(15));
+		@include font($body-font-family, 400, rem-calc(8), $gray-03){
+			text-align: right;	
+		}
+		
+	}
+}

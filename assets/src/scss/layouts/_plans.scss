@@ -1,0 +1,44 @@
+.plans{
+	padding-bottom: rem-calc(150);
+	&__row{
+		@include flex-grid-row();
+		&--staff{
+			justify-content: center;
+		}
+	}
+	&__title-row{
+		@include flex-grid-column(8, rem-calc(15));
+		@include breakpoint(medium down){
+			@include flex-grid-column(12, rem-calc(15));
+		}
+		text-align: center;
+		margin: 0 auto;
+	}
+	&__top-list{
+		margin-bottom: rem-calc(150);
+		&-items{
+			@include breakpoint(medium up){
+				@include flex-grid-column(3, rem-calc(15));
+			}
+			@include breakpoint(small down){
+				@include flex-grid-column(12, rem-calc(15));
+			}
+		}
+	}
+	&__title{
+		@include create-title-style();
+	}
+	&__subtitle{
+		@include create-text-style(){
+			padding-bottom: rem-calc(100);
+		}
+	}
+	&__stuff{
+		@include breakpoint(medium up){
+				@include flex-grid-column(4, rem-calc(15));
+			}
+			@include breakpoint(small down){
+				@include flex-grid-column(12, rem-calc(15));
+			}
+	}
+}
