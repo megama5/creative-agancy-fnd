@@ -37,8 +37,8 @@ gulp.task('sass', function () {
 gulp.task('javascript', function (cb) {
     pump([
             gulp.src([
+                'assets/components/jquery/dist/jquery.min.js',
                 'assets/components/foundation-sites/dist/js/foundation.js',
-                'assets/src/javascript/plugins/*.js', 
                 'assets/src/javascript/scripts.js'])
             .pipe(concat('global.js')),
             uglify(),
